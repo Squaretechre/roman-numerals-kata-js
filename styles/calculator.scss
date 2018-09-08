@@ -1,0 +1,32 @@
+.calculator {
+  margin: auto; 
+  width: 300px;
+}
+
+.calculator__answer {
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  height: 35px;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: right;
+  background-color: grey;
+  color: white;
+}
+
+.calculator__number1, .calculator__number2 {
+  display: block;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.calculator__add-button, .calculator__subtract-button {
+  display: inline-block;
+  height: 35px;
+  width: 49%;
+  font-size: 20px;
+}
