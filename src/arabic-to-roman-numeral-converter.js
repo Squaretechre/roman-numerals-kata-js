@@ -17,7 +17,6 @@ const convert = (number) => {
     if (number > 20) return numeralTen + numeralTen + numeralOne.repeat(number - 20)
     if (number === 20) return numeralTen + numeralTen
     if (number === 19) return numeralTen + numeralNine
-    if (number > 15) return numeralTen + numeralFive + numeralOne.repeat(number - 15)
 
     let remainingTotal = number
     let numeral = ''
