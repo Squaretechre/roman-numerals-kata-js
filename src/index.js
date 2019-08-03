@@ -1,4 +1,4 @@
-import calculator from './calculator'
+import calculator from './arabic-to-roman-numeral-converter'
 import '../styles/index.scss'
 
 document.getElementById('buttonAdd').addEventListener('click', () => {
