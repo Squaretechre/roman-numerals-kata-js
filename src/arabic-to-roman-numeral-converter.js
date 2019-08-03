@@ -6,7 +6,8 @@ const convert = (number) => {
     const numeralTen = 'X'
 
     const numerals = {
-        1: 'I'
+        1: 'I',
+        4: 'IV',
     }
 
     if (number === 24) return numeralTen + numeralTen + numeralFour
@@ -21,14 +22,14 @@ const convert = (number) => {
     if (number === 9) return numeralNine
     if (number > 5) return numeralFive + numeralOne.repeat(number - 5)
     if (number === 5) return numeralFive
-    if (number === 4) return numeralFour
 
     let remainingTotal = number
     let numeral = ''
 
     while (remainingTotal > 0) {
-        remainingTotal = remainingTotal - 1
-        numeral = numeral + numerals['1']
+        const nextHighestNumeral = Object.keys(numerals).reverse().find(key => remainingTotal >= key)
+        remainingTotal = remainingTotal - nextHighestNumeral
+        numeral = numeral + numerals[nextHighestNumeral]
     }
 
     return numeral
