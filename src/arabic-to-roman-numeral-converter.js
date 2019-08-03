@@ -7,9 +7,7 @@ export default (number) => {
     const numeralTen = 'X'
 
     if (number === 24) return numeralTen + numeralTen + numeralFour
-    if (number === 23) return numeralTen + numeralTen + numeralOne + numeralOne + numeralOne
-    if (number === 22) return numeralTen + numeralTen + numeralOne + numeralOne
-    if (number === 21) return numeralTen + numeralTen + numeralOne
+    if (number > 20) return numeralTen + numeralTen + numeralOne.repeat(number - 20)
     if (number === 20) return numeralTen + numeralTen
     if (number === 19) return numeralTen + numeralNine
     if (number > 15) return numeralTen + numeralFive + numeralOne.repeat(number - 15)
