@@ -128,19 +128,6 @@ describe('arabic to roman numeral converter', () => {
     expect(convert(24)).toBe('XXIV')
   })
 
-  /*
-    Examples:
-      42 = XXXXII
-      61 = LXI
-      545 = DXLV
-      217 = CCXVII
-
-      50    ➔ L
-      100   ➔ C
-      500   ➔ D
-      1000  ➔ M
-   */
-
   it('converts 39 to XXXIX', () => {
     expect(convert(39)).toBe('XXXIX')
   })
@@ -175,6 +162,10 @@ describe('arabic to roman numeral converter', () => {
 
   it('converts 500 to D', () => {
     expect(convert(500)).toBe('D')
+  })
+
+  it('converts 900 to CM', () => {
+    expect(convert(900)).toBe('CM')
   })
 
   it('converts 1000 to M', () => {
