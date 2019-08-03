@@ -152,4 +152,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 100 to C', () => {
     expect(convert(100)).toBe('C')
   })
+
+  it('converts 500 to D', () => {
+    expect(convert(500)).toBe('D')
+  })
 })

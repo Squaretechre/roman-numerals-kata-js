@@ -7,6 +7,7 @@ const convert = (number) => {
         10: 'X',
         50: 'L',
         100: 'C',
+        500: 'D',
     }
 
     let remainingTotal = number
