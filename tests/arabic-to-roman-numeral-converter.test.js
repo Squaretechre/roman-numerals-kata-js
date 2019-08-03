@@ -153,6 +153,10 @@ describe('arabic to roman numeral converter', () => {
     expect(convert(61)).toBe('LXI')
   })
 
+  it('converts 217 to CCXVII', () => {
+    expect(convert(217)).toBe('CCXVII')
+  })
+
   it('converts 545 to DXLV', () => {
     expect(convert(545)).toBe('DXLV')
   })
