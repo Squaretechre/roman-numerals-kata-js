@@ -50,4 +50,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 5 to V', () => {
     expect(convert(5)).toBe('V')
   })
+
+  it('converts 6 to VI', () => {
+    expect(convert(6)).toBe('VI')
+  })
 })
