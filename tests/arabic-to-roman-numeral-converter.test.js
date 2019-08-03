@@ -38,4 +38,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 2 to II', () => {
     expect(convert(2)).toBe('II')
   })
+
+  it('converts 3 to III', () => {
+    expect(convert(3)).toBe('III')
+  })
 })
