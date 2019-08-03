@@ -6,6 +6,7 @@ export default (number) => {
     const numeralNine = 'IX'
     const numeralTen = 'X'
 
+    if (number === 24) return numeralTen + numeralTen + numeralFour
     if (number === 23) return numeralTen + numeralTen + numeralOne + numeralOne + numeralOne
     if (number === 22) return numeralTen + numeralTen + numeralOne + numeralOne
     if (number === 21) return numeralTen + numeralTen + numeralOne

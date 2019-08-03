@@ -123,4 +123,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 23 to XXIII', () => {
     expect(convert(23)).toBe('XXIII')
   })
+
+  it('converts 24 to XXIV', () => {
+    expect(convert(24)).toBe('XXIV')
+  })
 })
