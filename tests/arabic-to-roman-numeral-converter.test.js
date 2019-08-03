@@ -8,6 +8,7 @@ import convert from '../src/arabic-to-roman-numeral-converter'
     4     ➔ IV
     5     ➔ V
     9     ➔ IX
+    10    ➔ X
     21    ➔ XXI
     50    ➔ L
     100   ➔ C
@@ -65,5 +66,9 @@ describe('arabic to roman numeral converter', () => {
 
   it('converts 9 to IX', () => {
     expect(convert(9)).toBe('IX')
+  })
+
+  it('converts 10 to X', () => {
+    expect(convert(10)).toBe('X')
   })
 })
