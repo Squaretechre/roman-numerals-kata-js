@@ -5,6 +5,7 @@ export default (number) => {
     const numeralNine = 'IX'
     const numeralTen = 'X'
 
+    if (number === 15) return numeralTen + numeralFive
     if (number === 14) return numeralTen + numeralOne + numeralFive
     if (number === 13) return numeralTen + numeralOne + numeralOne + numeralOne
     if (number === 12) return numeralTen + numeralOne + numeralOne
