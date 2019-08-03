@@ -10,6 +10,7 @@ const convert = (number) => {
         4: 'IV',
         5: 'V',
         9: 'IX',
+        10: 'X'
     }
 
     if (number === 24) return numeralTen + numeralTen + numeralFour
@@ -20,7 +21,6 @@ const convert = (number) => {
     if (number === 15) return numeralTen + numeralFive
     if (number === 14) return numeralTen + numeralFour
     if (number > 10) return numeralTen + numeralOne.repeat(number - 10)
-    if (number === 10) return numeralTen
 
     let remainingTotal = number
     let numeral = ''
