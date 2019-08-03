@@ -6,6 +6,7 @@ const convert = (number) => {
         9: 'IX',
         10: 'X',
         50: 'L',
+        100: 'C',
     }
 
     let remainingTotal = number
