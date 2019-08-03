@@ -95,4 +95,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 16 to XVI', () => {
     expect(convert(16)).toBe('XVI')
   })
+
+  it('converts 17 to XVII', () => {
+    expect(convert(17)).toBe('XVII')
+  })
 })
