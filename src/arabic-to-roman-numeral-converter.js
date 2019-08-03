@@ -1,10 +1,4 @@
 const convert = (number) => {
-    const numeralOne = 'I'
-    const numeralFour = 'IV'
-    const numeralFive = 'V'
-    const numeralNine = 'IX'
-    const numeralTen = 'X'
-
     const numerals = {
         1: 'I',
         4: 'IV',
