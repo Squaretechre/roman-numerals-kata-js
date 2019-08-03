@@ -149,6 +149,10 @@ describe('arabic to roman numeral converter', () => {
     expect(convert(42)).toBe('XLII')
   })
 
+  it('converts 61 to LXI', () => {
+    expect(convert(61)).toBe('LXI')
+  })
+
   it('converts 50 to L', () => {
     expect(convert(50)).toBe('L')
   })
