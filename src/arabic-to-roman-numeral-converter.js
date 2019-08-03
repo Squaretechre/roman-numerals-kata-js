@@ -5,6 +5,10 @@ const convert = (number) => {
     const numeralNine = 'IX'
     const numeralTen = 'X'
 
+    const numerals = {
+        1: 'I'
+    }
+
     if (number === 24) return numeralTen + numeralTen + numeralFour
     if (number > 20) return numeralTen + numeralTen + numeralOne.repeat(number - 20)
     if (number === 20) return numeralTen + numeralTen
@@ -19,7 +23,15 @@ const convert = (number) => {
     if (number === 5) return numeralFive
     if (number === 4) return numeralFour
 
-    return numeralOne.repeat(number)
+    let remainingTotal = number
+    let numeral = ''
+
+    while (remainingTotal > 0) {
+        remainingTotal = remainingTotal - 1
+        numeral = numeral + numerals['1']
+    }
+
+    return numeral
 };
 
 export default convert
