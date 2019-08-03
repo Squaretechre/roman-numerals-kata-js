@@ -46,4 +46,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 4 to IV', () => {
     expect(convert(4)).toBe('IV')
   })
+
+  it('converts 5 to V', () => {
+    expect(convert(5)).toBe('V')
+  })
 })
