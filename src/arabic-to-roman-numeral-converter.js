@@ -8,9 +8,7 @@ export default (number) => {
 
     if (number === 20) return numeralTen + numeralTen
     if (number === 19) return numeralTen + numeralNine
-    if (number === 18) return numeralTen + numeralFive + numeralOne + numeralOne + numeralOne
-    if (number === 17) return numeralTen + numeralFive + numeralOne + numeralOne
-    if (number === 16) return numeralTen + numeralFive + numeralOne
+    if (number > 15) return numeralTen + numeralFive + numeralOne.repeat(number - 15)
     if (number === 15) return numeralTen + numeralFive
     if (number === 14) return numeralTen + numeralFour
     if (number > 10) return numeralTen + numeralOne.repeat(number - 10)
