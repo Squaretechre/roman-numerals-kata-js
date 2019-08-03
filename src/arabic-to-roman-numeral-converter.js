@@ -13,8 +13,6 @@ const convert = (number) => {
         10: 'X'
     }
 
-    if (number === 24) return numeralTen + numeralTen + numeralFour
-
     let remainingTotal = number
     let numeral = ''
 
