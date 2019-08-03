@@ -25,7 +25,7 @@ import convert from '../src/arabic-to-roman-numeral-converter'
     18 = XVIII
     26 = XXVI
     39 = XXXIX
-    42 = XXXXII
+    42 = XLII
     61 = LXI
     545 = DXLV
     217 = CCXVII
