@@ -1,4 +1,4 @@
 
-export default () => {
-    return 'I'
+export default (number) => {
+    return 'I'.repeat(number)
 }
