@@ -99,4 +99,8 @@ describe('arabic to roman numeral converter', () => {
   it('converts 17 to XVII', () => {
     expect(convert(17)).toBe('XVII')
   })
+
+  it('converts 18 to XVIII', () => {
+    expect(convert(18)).toBe('XVIII')
+  })
 })
