@@ -1,5 +1,4 @@
-
-export default (number) => {
+const convert = (number) => {
     const numeralOne = 'I'
     const numeralFour = 'IV'
     const numeralFive = 'V'
@@ -19,5 +18,9 @@ export default (number) => {
     if (number > 5) return numeralFive + numeralOne.repeat(number - 5)
     if (number === 5) return numeralFive
     if (number === 4) return numeralFour
+
     return numeralOne.repeat(number)
-}
+};
+
+export default convert
+
