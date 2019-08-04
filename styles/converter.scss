@@ -1,0 +1,48 @@
+@import 'palette';
+
+.converter {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.converter__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.converter__number {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  height: 35px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.converter__numeral {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  height: 35px;
+  font-size: 20px;
+  line-height: 1.8;
+  background-color: $color-alpha;
+  color: white;
+}
+
+.converter__convert-button {
+  width: 6rem;
+}
+
+.converter__clear-button {
+  width: 6rem;
+  background-color: $color-delta;
+}
+
+.converter__clear-button:hover {
+  background-color: $color-delta-dark;
+}
+

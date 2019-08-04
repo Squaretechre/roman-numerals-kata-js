@@ -1,18 +1,17 @@
-import calculator from './arabic-to-roman-numeral-converter'
+import convert from './arabic-to-roman-numeral-converter'
 import '../styles/index.scss'
 
-document.getElementById('buttonAdd').addEventListener('click', () => {
-  const number1 = parseFloat(document.getElementById('number1').value)
-  const number2 = parseFloat(document.getElementById('number2').value)
-  const answer = calculator.add(number1, number2)
+const inputNumber = document.getElementById('inputNumber')
+const inputNumeral = document.getElementById('inputNumeral')
+const buttonConvert = document.getElementById('buttonConvert')
+const buttonClear = document.getElementById('buttonClear')
 
-  document.getElementById('answer').innerHTML = answer
+buttonConvert.addEventListener('click', () => {
+  const arabicNumber = parseFloat(inputNumber.value)
+  inputNumeral.value = convert(arabicNumber)
 })
 
-document.getElementById('buttonSubtract').addEventListener('click', () => {
-  const number1 = parseFloat(document.getElementById('number1').value)
-  const number2 = parseFloat(document.getElementById('number2').value)
-  const answer = calculator.subtract(number1, number2)
-
-  document.getElementById('answer').innerHTML = answer
+buttonClear.addEventListener('click', () => {
+  inputNumber.value = ''
+  inputNumeral.value = ''
 })

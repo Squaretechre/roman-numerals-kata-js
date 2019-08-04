@@ -1,11 +1,16 @@
-<html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title></title>
+</head>
 <body>
-  <div class="calculator">
-    <span id="answer" class="calculator__answer">0</span>
-    <input id="number1" type="number" class="calculator__number1" />
-    <input id="number2" type="number" class="calculator__number2" />
-    <button id="buttonAdd" class="calculator__add-button">+</button>
-    <button id="buttonSubtract" class="calculator__subtract-button">-</button>
+  <div class="converter">
+    <label for="inputNumber">Arabic number:</label>
+    <input id="inputNumber" type="number" class="converter__number" min="1" />
+    <label for="inputNumeral">Numeral:</label>
+    <input id="inputNumeral" type="text" class="converter__numeral" />
+    <button id="buttonConvert" class="converter__convert-button">Convert</button>
+    <button id="buttonClear" class="converter__clear-button">Clear</button>
   </div>
   <script src="./src/index.js"></script>
 </body>

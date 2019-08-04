@@ -1,4 +1,42 @@
+@import 'palette';
+
 body {
-  margin-top: 50px;
-  font-family: 'Helvetica';
+  margin-top: 4rem;
+  font-family: 'Open Sans', sans-serif;
 }
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  padding: 32px 24px;
+  margin-bottom: 2rem;
+  transition: all .2s;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid $color-charlie;
+  padding: 31px 23px;
+}
+
+button {
+  padding: 1rem;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  font-weight: 600;
+  background-color: $color-foxtrot;
+  color: $color-white;
+  transition: all .2s;
+}
+
+button:hover {
+  background-color: $color-foxtrot-light;
+  cursor: pointer;
+}
+
